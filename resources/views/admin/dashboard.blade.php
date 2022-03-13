@@ -34,14 +34,18 @@
                                 <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
                                     <div class="row">
                                         <div class="col-4">
-                                            <p>ID</p>
                                             <p>Nama</p>
-                                            <p>Email</p>
+                                            <p>NIK</p>
+                                            <p>Hamil Ke- </p>
+                                            <p>HPHT</p>
+                                            <p>HPL</p>
                                         </div>
                                         <div class="col-8">
-                                            <p>&nbsp;&nbsp; : {{$stud->id}}</p>
                                             <p>&nbsp;&nbsp; : {{$stud->name}}</p>
                                             <p>&nbsp;&nbsp; : {{$stud->email}}</p>
+                                            <p>&nbsp;&nbsp; : {{$stud->hamilke}}</p>
+                                            <p>&nbsp;&nbsp; : {{$stud->hpht}}</p>
+                                            <p>&nbsp;&nbsp; : {{$stud->hpl}}</p>
 
                                         </div>
                                     </div>
