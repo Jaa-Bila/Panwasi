@@ -57,13 +57,15 @@
                                         </div>
                                     </div>
                             </div>
-                            <div class="card-body" style="font-family: 'Nunito Sans', sans-serif;">
+                            <div class="card-body" style="font-family: 'Nunito Sans', sans-serif; display:flex; justify-content:center; text-align:center;">
                             <form method="POST" action="{{ route('vitamin.store') }}" method="post" enctype="multipart/form-data">
                             {{csrf_field()}}
                                 <div class="input-group control-group increment" >
-                                <input type="file" name="image" accept="image/*" capture>
+                                <label for="form-file" class="btn btn-secondary btn-sm">
+                                <i class="fa fa-camera"></i> Ambil Gambar</label>
+                                <input id="form-file" class="hidden" type="file" name="image" accept="image/*" capture>
                                 </div>
-                                <button type="submit" class="btn btn-primary" style="margin-top:10px">Submit</button>
+                                <button type="submit" class="btn btn-primary btn-sm" style="margin-top:10px">Submit</button>
                             </form>
                             </div>
                         </div>
@@ -72,4 +74,6 @@
             </div>
         </div>
     </div>
+
+    
 </x-app-layout>
